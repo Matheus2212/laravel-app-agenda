@@ -1,0 +1,216 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+    font-size: 17px;
+}
+
+body {
+    height: 100%;
+}
+nav {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+#principal {
+    position: relative;
+    height: 100%;
+
+    -webkit-transition: ease-in-out 0.4s;
+    -o-transition: ease-in-out 0.4s;
+    -ms-transition: ease-in-out 0.4s;
+    -moz-transition: ease-in-out 0.4s;
+    transition: ease-in-out 0.4s;
+}
+#principal #lista {
+    position: relative;
+    width: 100%;
+    padding-right: 0;
+
+    -webkit-transition: ease-in-out 0.4s;
+    -o-transition: ease-in-out 0.4s;
+    -ms-transition: ease-in-out 0.4s;
+    -moz-transition: ease-in-out 0.4s;
+    transition: ease-in-out 0.4s;
+}
+#principal #lista .box_contato {
+    background-color: #ffffff;
+    position: relative;
+    overflow:hidden;
+
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+
+    -webkit-transition: ease-in-out 0.4s;
+    -o-transition: ease-in-out 0.4s;
+    -ms-transition: ease-in-out 0.4s;
+    -moz-transition: ease-in-out 0.4s;
+    transition: ease-in-out 0.4s;
+}
+#principal #lista .box_contato:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+#principal #lista .box_contato .box_contato_imagem img {
+    position: relative;
+
+    -webkit-border-radius: 100%;
+    -o-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+#principal #lista .box_contato .media > div {
+    padding: 10px;
+}
+#principal #lista .box_contato .remove {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 5px;
+    height: auto;
+    line-height: 10px;
+}
+#principal #aside #back {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+body.open #principal #lista {
+    width: 70%;
+    padding-right: 20px;
+}
+#principal #aside {
+    position: fixed;
+    width: 30%;
+    right: -30%;
+    top: 85px;
+    padding: 20px;
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+    -webkit-transition: ease-in-out 0.4s;
+    -o-transition: ease-in-out 0.4s;
+    -ms-transition: ease-in-out 0.4s;
+    -moz-transition: ease-in-out 0.4s;
+    transition: ease-in-out 0.4s;
+}
+body.open #principal #aside {
+    right: 15px;
+
+    opacity: 1;
+    visibility: visible;
+}
+body.open #principal #aside label {
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+body.open #principal #aside [name] {
+    border: 0;
+    width: 100%;
+    display: block;
+    line-height: 30px;
+    padding: 5px;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+#new {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 30px;
+
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -o-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+}
+#new span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 20px;
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 991px) {
+    body.open #principal #lista {
+        width: 50%;
+    }
+    body.open #principal #aside {
+        width: 50%;
+    }
+}
+@media (max-width: 559px) {
+    nav .form-control {
+        width: auto;
+    }
+    body.open #principal #lista {
+        opacity: 0;
+    }
+    body.open #principal #aside {
+        width: calc(100% - 40px);
+        right:10px;
+        left:15px;
+    }
+    #principal #aside #back {
+        left: 10px;
+        right: initial;
+        position: static;
+    }
+    #principal #aside #back span {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}

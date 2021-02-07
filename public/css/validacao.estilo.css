@@ -1,0 +1,167 @@
+.jBox{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:999;
+    opacity:0;
+    transition:ease-in-out 0.4s;
+    -webkit-transition:ease-in-out 0.4s;
+    -moz-transition:ease-in-out 0.4s;
+    -o-transition:ease-in-out 0.4s;
+    -ms-transition:ease-in-out 0.4s;
+    margin:0 auto;
+    padding:0 10px;
+    color:#333333;
+}
+.jBox.jBox_visivel{
+    opacity:1;
+    visibility:visible;
+}
+.jBox .jBox_fundo{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:1;
+    background-color:rgba(0,0,0,0.5);
+}
+.jBox .jBox_box{
+    position: relative;
+    max-width:340px;
+    background-color:#FFFFFF;
+    border-radius:8px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -o-border-radius:8px;
+    -ms-border-radius:8px;
+    z-index:2;
+    padding:20px 20px 80px 20px;
+    margin:80px auto;
+    transform:translateY(-80px);
+    box-shadow:0 0 5px rgba(0,0,0,0.7);
+    transition:ease-in-out 0.4s;
+    -webkit-transition:ease-in-out 0.4s;
+    -moz-transition:ease-in-out 0.4s;
+    -o-transition:ease-in-out 0.4s;
+    -ms-transition:ease-in-out 0.4s;
+    opacity:0;
+}
+.jBox.jBox_visivel .jBox_box{
+    transform: none;
+    opacity:1;
+}
+.jBox .jBox_icone{
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    padding-right:80px;
+}
+.jBox .jBox_icone>span{
+    position:absolute;
+    left:50%;
+    top:36%;
+    transform:translate(-50%,-36%);
+    font-size:50px;
+    text-shadow:0 1px 3px rgba(0,0,0,0.3);
+    color:#666666;
+}
+.jBox .jBox_icone>span.jBox_aviso{
+    color:#005999;
+}
+.jBox .jBox_icone>span.jBox_erro{
+    color:#7c0505;
+}
+.jBox .jBox_icone>span.jBox_sucesso{
+    color:#287745;
+}
+.jBox .jBox_icone>span.jBox_pergunta{
+    color:#17a2b8;
+}
+.jBox .jBox_box .jBox_texto{
+    position: relative;
+    padding-left:60px;
+}
+.jBox .jBox_botao{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    padding:20px 20px 20px 80px;
+}
+.jBox .jBox_botao a,
+.jBox .jBox_botao a:active,
+.jBox .jBox_botao a:visited,
+.jBox .jBox_botao a:link{
+    float:left;
+    text-decoration: none;
+    color:#FFFFFF;
+    font-size:18px;
+    padding:10px;
+    margin-right:10px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.3);
+    background-color:#666666;
+
+    border-radius:8px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -o-border-radius:8px;
+    -ms-border-radius:8px;
+
+    transition:ease-in-out 0.4s;
+    -webkit-transition:ease-in-out 0.4s;
+    -moz-transition:ease-in-out 0.4s;
+    -o-transition:ease-in-out 0.4s;
+    -ms-transition:ease-in-out 0.4s;
+}
+.jBox .jBox_botao a:hover{
+    text-shadow:0 0 3px rgba(255,255,255,0.5);
+    background-color:#999999;
+}
+
+.jBox .jBox_botao a.jBox_aviso,
+.jBox .jBox_botao a.jBox_aviso:active,
+.jBox .jBox_botao a.jBox_aviso:visited,
+.jBox .jBox_botao a.jBox_aviso:link{
+    background-color:#005999;
+}
+.jBox .jBox_botao a.jBox_aviso:hover{
+    background-color:#0099d9;
+}
+.jBox .jBox_botao a.jBox_pergunta,
+.jBox .jBox_botao a.jBox_pergunta:active,
+.jBox .jBox_botao a.jBox_pergunta:visited,
+.jBox .jBox_botao a.jBox_pergunta:link{
+    background-color:#17a2b8;
+}
+
+.jBox .jBox_botao a.jBox_pergunta:hover{
+    background-color:#17b2c8;
+}
+.jBox .jBox_botao a.jBox_sucesso,
+.jBox .jBox_botao a.jBox_sucesso:active,
+.jBox .jBox_botao a.jBox_sucesso:visited,
+.jBox .jBox_botao a.jBox_sucesso:link{
+    background-color:#287745;
+}
+
+.jBox .jBox_botao a.jBox_sucesso:hover{
+    background-color:#38b755;
+}
+.jBox .jBox_botao a.jBox_erro,
+.jBox .jBox_botao a.jBox_erro:active,
+.jBox .jBox_botao a.jBox_erro:visited,
+.jBox .jBox_botao a.jBox_erro:link{
+    background-color:#7c0505;
+}
+
+.jBox .jBox_botao a.jBox_erro:hover{
+    background-color:#cc1515;
+}
+.jBox .jBox_botao a::before{
+    content:"";
+    display:none;
+}
